@@ -19,3 +19,7 @@
 //DELETE = Delete;
 //PUT = change; 
 //PATCH = used when I want to make only a small, specific change to a resource and not to the entire data
+
+// Set() and Map()
+  //Set() Does not accepted duplicate values.
+  //Map () 
