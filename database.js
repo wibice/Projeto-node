@@ -1,7 +1,7 @@
 import { create } from "domain"
 import { randomUUID } from "crypto"
 
-//UUID = Universal Unique ID
+//UUID = Universal Unique ID.
 
 export class DatabeseMemory {
     #videos = new Map()
