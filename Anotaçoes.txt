@@ -1,0 +1,21 @@
+// import { createServer } from "node:http" 
+
+//Function where I can pass two steps (steps ==> parametros)
+// const server = createServer ((request, response) => { 
+//   response.write('oi')
+
+// return response.end()
+
+// })
+
+// It helps because if I have several applications running on the machine I can put each one on a port
+// server.listen(3333)  
+
+// localhost:3333
+// localhost:3334
+
+//POST = Record Creation (BASICALLY IT WILL HELP US TO CREATE);
+//GET = Used in the application when I search for some information, listing, detail, etc;
+//DELETE = Delete;
+//PUT = change; 
+//PATCH = used when I want to make only a small, specific change to a resource and not to the entire data
