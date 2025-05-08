@@ -1,18 +1,31 @@
 import fastify from "fastify";
 import { DatabeseMemory } from "./database.js";
+import { create } from "domain";
+import { response } from "express";
 
 const server = fastify()
 
+const database = new DatabeseMemory()
+
 
 //*Record create.
-server.post('/videos', () => {
- 
-  return {videos_create: "create videos"}
+server.post('/videos', (request, reply) => { 
+  database.create({
+    title: 'Video',
+    
+    description: 'Descrição do vídeo',
+    duration: 180
+
+  })
+  zconsole.log(database.list())
+   return response.status(201).send()
+
 })
  
 //?picking up details.
 server.get('/videos', () => {
   return {detls: "Hellow Details" }
+
 })
 
 //-change.
